@@ -4,7 +4,7 @@
 
 By the end of this lesson you should be able to create a tip calculator by:
 
-- Add event listeners to DOM elements
+- Adding event listeners to DOM elements
 - Selecting DOM elements and their values using JavaScript
 - Creating and appending elements to the DOM
 
@@ -91,6 +91,11 @@ Update your app to enable this story:
 ![](wireframes/tip-calculator-amount.png)
 
 Commit and push.
+
+## Reflect
+
+- Did you follow the stories step by step or did you find yourself working on multiple stories at once?
+- Do you have at least four commits with descriptive messages?
 
 ## Stretch Stories
 
