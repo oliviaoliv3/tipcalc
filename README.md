@@ -23,7 +23,8 @@ By the end of this lesson you should be able to create a tip calculator by:
 1. Add a CSS file, and wire up the JavaScript and CSS files 
   - add a simple `console.log` in the js file to verify that it's included correctly
   - add a simple style change, like a background color on `body`, to verify that it's referenced correctly
-1. In git, commit, and push
+
+With git, stage the changes, commit with a descriptive message and push
 
 ## Story #1
 
@@ -43,11 +44,10 @@ Self-assess:
 
 - Check your work visually.  Does it match the wireframe?
 - Is your HTML valid according to https://validator.w3.org/nu/ ?
-- When you click in the amount field and start typing, does the initial text disappear?
 
 Create a checkpoint:
 
-Now's a good time to do a quick git add / commit / push. Continue this process through out the stories
+Now's a good time to do a quick git add / commit / push.
 
 ## Story #2
 
@@ -60,6 +60,9 @@ Write javascript to satisfy the following user story:
     Then they should see the 20% tip amount appear beneath the text field
 
 ![](wireframes/tip-calculator-filled-in.png)
+
+Organize your code correctly into both `app.js` and `events.js` files. Seperate the event handler functions.
+If the codes is all in one file, divide it accordingly so it still works.
 
 Check your work:
 
@@ -74,7 +77,7 @@ Check your work:
 
 Commit with a descriptive message and push.
 
-## Story #4
+## Story #3
 
 **User can choose the percent they'd like to tip**
 
@@ -89,9 +92,22 @@ Update your app to enable this story:
 
 Commit and push.
 
-## Stretch
+## Stretch Stories
+
+**Users see a new total with the tip added**
+
+    When a user clicks "Calculate Tip"
+    Beneath the text field
+    They should see the correct tip amount AND a new total with the tip added 
 
 **Users see the tip amount update as they type**
 
     When a user types, after each keystroke update the tip amount
     Also change the tip amount automatically when the dropdown is selected
+
+**Users tip percentage selection remains after refreshing the page**
+
+    When the page reloads, the user sees the previous selected percentage as default
+
+Use [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to save the user's tip selection on change.
+When the page loads, find the user's saved tip selection from localStorage and select it from the dropdown
