@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-style: solid
+}
+
+input {
+    padding-left: 42%;
+}
+placeholder {
+    padding-left: 15px;
+}
+button {
+    display: flex
+    align-content: center;
+}
